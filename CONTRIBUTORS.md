@@ -4,3 +4,4 @@
 * [lakshitf](https://github.com/jamieburnip)
 * [anwargul](https://github.com/anwargul0x)
 * [fructuoso](https://github.com/fructuoso)
+* [Pedrocssg](https://github.com/Pedrocssg)
