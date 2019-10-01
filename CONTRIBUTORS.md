@@ -8,4 +8,4 @@
 * [yanuarakhid](https://github.com/yanuarakhid)
 * [SantosAntero](https://github.com/SantosAntero)
 * [Charlye](https://github.com/costassolla)
-- [MikeLenoir](https://github.com/MikeLenoir)
+* [MikeLenoir](https://github.com/MikeLenoir)
