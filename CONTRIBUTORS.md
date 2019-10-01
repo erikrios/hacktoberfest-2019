@@ -1,7 +1,7 @@
 * [jamieburnip](https://github.com/jamieburnip)
 * [coolnishant](https://github.com/coolnishant)
 * [TarushS](https://github.com/TarushS)
-* [lakshitf](https://github.com/jamieburnip)
+* [lakshitf](https://github.com/lakshitf)
 * [anwargul](https://github.com/anwargul0x)
 * [fructuoso](https://github.com/fructuoso)
 * [Pedrocssg](https://github.com/Pedrocssg)
