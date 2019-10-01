@@ -2,3 +2,4 @@
 * [coolnishant](https://github.com/coolnishant)
 * [TarushS](https://github.com/TarushS)
 * [lakshitf] (https://github.com/jamieburnip)
+* [anwargul](https://github.com/anwargul0x)
