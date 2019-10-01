@@ -3,4 +3,7 @@
 * [TarushS](https://github.com/TarushS)
 * [lakshitf](https://github.com/jamieburnip)
 * [anwargul](https://github.com/anwargul0x)
+* [fructuoso](https://github.com/fructuoso)
+* [Pedrocssg](https://github.com/Pedrocssg)
+* [yanuarakhid](https://github.com/yanuarakhid)
 * [SantosAntero](https://github.com/SantosAntero)
