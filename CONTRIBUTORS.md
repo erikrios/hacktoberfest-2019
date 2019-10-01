@@ -7,4 +7,6 @@
 * [Pedrocssg](https://github.com/Pedrocssg)
 * [yanuarakhid](https://github.com/yanuarakhid)
 * [SantosAntero](https://github.com/SantosAntero)
+* [Charlye](https://github.com/costassolla)
+* [MikeLenoir](https://github.com/MikeLenoir)
 * [ErikRioSetiawan](https://github.com/erikrios)
