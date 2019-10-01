@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cinema Movies</string>
+    <string name="title_movie">Film</string>
+    <string name="title_tv_show">Acara TV</string>
+    <string name="title_favorite">Favorit</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="release_date">Tanggal Rilis: %s</string>
+    <string name="popularity">Popularitas: %s</string>
+    <string name="change_language">Ganti Bahasa</string>
+    <string name="search_movie">Cari Film…</string>
+    <string name="search_tv_show">Cari Acara TV…</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_data">Tidak Ada Data</string>
+    <string name="setting">Pengaturan</string>
+    <string name="release_reminder">Pengingat Rilis</string>
+    <string name="release_reminder_hint">Pengingat Menunjukkan film yang rilis \nhari ini</string>
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="daily_reminder_hint">Pengingat Untuk Kembali ke App</string>
+    <string name="daily_reminder_message">Cinema Movies Rindu Kamu</string>
+</resources>

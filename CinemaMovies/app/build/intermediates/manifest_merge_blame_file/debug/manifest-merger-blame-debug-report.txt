@@ -1,0 +1,158 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.erikriosetiawan.cinemamovies"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="15"
+8-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:6:5-67
+11-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:7:5-68
+12-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:7:22-65
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:8:5-66
+13-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:8:22-63
+14
+15    <permission
+15-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:10:5-12:44
+16        android:name="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.READ_DATABASE"
+16-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:11:9-101
+17        android:protectionLevel="normal" />
+17-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:12:9-41
+18    <permission
+18-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:13:5-15:44
+19        android:name="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.WRITE_DATABASE"
+19-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:14:9-102
+20        android:protectionLevel="normal" />
+20-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:15:9-41
+21
+22    <application
+22-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:17:5-69:19
+23        android:allowBackup="true"
+23-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:18:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.1.0] /home/erik1997/.gradle/caches/transforms-2/files-2.1/563be99a7f8ba6717b67ce50a8a4b6a6/core-1.1.0/AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@mipmap/ic_launcher"
+26-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:19:9-43
+27        android:label="@string/app_name"
+27-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:20:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:21:9-54
+29        android:supportsRtl="true"
+29-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:22:9-35
+30        android:testOnly="true"
+31        android:theme="@style/AppTheme" >
+31-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:23:9-40
+32        <activity android:name="com.erikriosetiawan.cinemamovies.SettingActivity" />
+32-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:25:9-62
+32-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:25:19-50
+33
+34        <receiver android:name="com.erikriosetiawan.cinemamovies.widget.FavoriteMovieWidget" >
+34-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:27:9-35:20
+34-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:27:19-61
+35            <intent-filter>
+35-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:28:13-30:29
+36                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+36-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:29:17-84
+36-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:29:25-81
+37            </intent-filter>
+38
+39            <meta-data
+39-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:32:13-34:70
+40                android:name="android.appwidget.provider"
+40-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:33:17-58
+41                android:resource="@xml/favorite_movie_widget_info" />
+41-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:34:17-67
+42        </receiver>
+43
+44        <activity android:name="com.erikriosetiawan.cinemamovies.SearchActivity" />
+44-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:37:9-52
+44-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:37:19-49
+45        <activity android:name="com.erikriosetiawan.cinemamovies.DetailActivity" />
+45-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:38:9-52
+45-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:38:19-49
+46        <activity
+46-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:39:9-47:20
+47            android:name="com.erikriosetiawan.cinemamovies.MainActivity"
+47-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:40:13-41
+48            android:label="@string/app_name" >
+48-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:41:13-45
+49            <intent-filter>
+49-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:42:13-46:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:43:17-69
+50-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:43:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:45:17-77
+52-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:45:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <service
+56-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:49:9-51:72
+57            android:name="com.erikriosetiawan.cinemamovies.widget.StackWidgetFavoriteMovieService"
+57-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:50:13-67
+58            android:permission="android.permission.BIND_REMOTEVIEWS" />
+58-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:51:13-69
+59        <service
+59-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:52:9-56:72
+60            android:name="com.erikriosetiawan.cinemamovies.widget.UpdateWidgetFavoriteMovieService"
+60-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:53:13-68
+61            android:enabled="true"
+61-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:54:13-35
+62            android:exported="true"
+62-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:55:13-36
+63            android:permission="android.permission.BIND_JOB_SERVICE" />
+63-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:56:13-69
+64
+65        <receiver
+65-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:58:9-61:39
+66            android:name="com.erikriosetiawan.cinemamovies.alarm.AlarmReceiver"
+66-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:59:13-48
+67            android:enabled="true"
+67-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:60:13-35
+68            android:exported="true" />
+68-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:61:13-36
+69
+70        <provider
+70-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:63:9-68:120
+71            android:name="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider"
+71-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:64:13-59
+72            android:authorities="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider"
+72-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:65:13-98
+73            android:exported="true"
+73-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:66:13-36
+74            android:readPermission="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.READ_DATABASE"
+74-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:67:13-115
+75            android:writePermission="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.WRITE_DATABASE" />
+75-->/home/erik1997/AndroidStudioProjects/CinemaMovies/app/src/main/AndroidManifest.xml:68:13-117
+76        <provider
+76-->[com.squareup.picasso:picasso:2.71828] /home/erik1997/.gradle/caches/transforms-2/files-2.1/aefdf37e5a716f9873329608f2d1f118/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+77            android:name="com.squareup.picasso.PicassoProvider"
+77-->[com.squareup.picasso:picasso:2.71828] /home/erik1997/.gradle/caches/transforms-2/files-2.1/aefdf37e5a716f9873329608f2d1f118/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+78            android:authorities="com.erikriosetiawan.cinemamovies.com.squareup.picasso"
+78-->[com.squareup.picasso:picasso:2.71828] /home/erik1997/.gradle/caches/transforms-2/files-2.1/aefdf37e5a716f9873329608f2d1f118/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+79            android:exported="false" />
+79-->[com.squareup.picasso:picasso:2.71828] /home/erik1997/.gradle/caches/transforms-2/files-2.1/aefdf37e5a716f9873329608f2d1f118/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+80        <provider
+80-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/erik1997/.gradle/caches/transforms-2/files-2.1/6cf048463d0f9b7a5cf2a54b73ba773b/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+81            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+81-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/erik1997/.gradle/caches/transforms-2/files-2.1/6cf048463d0f9b7a5cf2a54b73ba773b/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+82            android:authorities="com.erikriosetiawan.cinemamovies.lifecycle-process"
+82-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/erik1997/.gradle/caches/transforms-2/files-2.1/6cf048463d0f9b7a5cf2a54b73ba773b/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+83            android:exported="false"
+83-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/erik1997/.gradle/caches/transforms-2/files-2.1/6cf048463d0f9b7a5cf2a54b73ba773b/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+84            android:multiprocess="true" />
+84-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/erik1997/.gradle/caches/transforms-2/files-2.1/6cf048463d0f9b7a5cf2a54b73ba773b/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+85    </application>
+86
+87</manifest>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cinema Movies</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_tv_show">TV Show</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="release_date">Release Date: %s</string>
+    <string name="popularity">Popularity: %s</string>
+    <string name="change_language">Change Language</string>
+    <string name="search_movie">Search Movie…</string>
+    <string name="search_tv_show">Search Tv Show…</string>
+    <string name="appwidget_text">Favorite Movie</string>
+    <string name="add_widget">Add widget</string>
+    <string name="no_data">No Data</string>
+    <string name="setting">Setting</string>
+    <string name="release_reminder">Release Reminder</string>
+    <string name="release_reminder_hint">Reminder Showing the movie that released \ntoday</string>
+    <string name="daily_reminder">Daily Reminder</string>
+    <string name="daily_reminder_hint">Reminder for return to app</string>
+    <string name="daily_reminder_message">Cinema Movies Missing You</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.erikriosetiawan.cinemamovies"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.READ_DATABASE"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.WRITE_DATABASE"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.erikriosetiawan.cinemamovies.SettingActivity" />
+
+        <receiver android:name="com.erikriosetiawan.cinemamovies.widget.FavoriteMovieWidget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/favorite_movie_widget_info" />
+        </receiver>
+
+        <activity android:name="com.erikriosetiawan.cinemamovies.SearchActivity" />
+        <activity android:name="com.erikriosetiawan.cinemamovies.DetailActivity" />
+        <activity
+            android:name="com.erikriosetiawan.cinemamovies.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.erikriosetiawan.cinemamovies.widget.StackWidgetFavoriteMovieService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+        <service
+            android:name="com.erikriosetiawan.cinemamovies.widget.UpdateWidgetFavoriteMovieService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="com.erikriosetiawan.cinemamovies.alarm.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider"
+            android:authorities="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider"
+            android:exported="true"
+            android:readPermission="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.READ_DATABASE"
+            android:writePermission="com.erikriosetiawan.cinemamovies.provider.FavoriteMovieProvider.WRITE_DATABASE" />
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.erikriosetiawan.cinemamovies.com.squareup.picasso"
+            android:exported="false" />
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.erikriosetiawan.cinemamovies.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>
